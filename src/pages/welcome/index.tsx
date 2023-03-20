@@ -35,7 +35,7 @@ const Welcome: NextPage = () => {
                             <Image
                                 src={profilePicture}
                                 alt=''
-                                className='rounded-full w-44 h-44'
+                                className='rounded-full bg-pink-100 w-44 h-44'
                             />
                         </div>
                         <p className='font-semibold'>Maëlis HAMMOUCHE</p>
