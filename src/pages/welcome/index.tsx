@@ -76,7 +76,7 @@ const Welcome: NextPage = () => {
                     </div>
                 </div>
                 {/* Card format desktop */}
-                <div className='lg:absolute lg:inset-0 lg:flex lg:justify-center lg:items-center lg:z-10'>
+                <div className='lg:absolute lg:inset-0 lg:justify-center lg:items-center lg:z-10 lg:flex hidden'>
                     <div className='w-2/3 bg-background-violet drop-shadow-2xl flex flex-row justify-between'>
                         <div className='flex-col flex items-center py-8 space-y-4 w-1/2'>
                             <Image
