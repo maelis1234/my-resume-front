@@ -6,13 +6,11 @@ import profilePicture from '../../assets/profilePicture.png'
 import Link from 'next/link'
 import router from 'next/router'
 
-// const inter = Inter({ subsets: ['latin'] })
-
 const Welcome: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Accueil</title>
+                <title>Maëlis Hammouche - CV</title>
                 <meta name='description' content="Page d'accueil" />
                 <meta
                     name='viewport'
@@ -22,14 +20,15 @@ const Welcome: NextPage = () => {
             </Head>
             <main className='h-screen relative'>
                 <div
-                    className='flex-col flex bg-white h-1/2
+                    className='bg-white h-1/2 lg:h-0
                 '
                 ></div>
                 <div
-                    className='flex-col flex bg-secondary-violet h-1/2
+                    className='bg-secondary-violet h-1/2 lg:w-1/2 lg:h-full
                 '
                 ></div>
-                <div className='absolute inset-0  flex justify-center items-center z-10'>
+                {/* Card format mobile */}
+                <div className='absolute inset-0 flex justify-center items-center z-10 lg:hidden'>
                     <div className='w-72 h-3/4 bg-background-violet drop-shadow-2xl flex flex-col justify-center items-center space-y-8'>
                         <div>
                             <Image
@@ -45,7 +44,7 @@ const Welcome: NextPage = () => {
                                 onClick={() => {
                                     router.push('/resume')
                                 }}
-                                className='text-white h-8 bg-primary-violet w-24 rounded-xl'
+                                className='text-white h-8 bg-primary-violet hover:bg-violet-400 w-24 rounded-2xl'
                             >
                                 CV
                             </button>
@@ -53,7 +52,7 @@ const Welcome: NextPage = () => {
                                 onClick={() => {
                                     router.push('/projects')
                                 }}
-                                className='w-24 h-8 rounded-xl border border-black font-semibold bg-white'
+                                className='w-24 h-8 rounded-2xl border border-primary-violet hover:bg-violet-300 text-primary-violet font-semibold bg-white'
                             >
                                 Projets
                             </button>
@@ -73,6 +72,67 @@ const Welcome: NextPage = () => {
                             >
                                 <i className='ri-github-fill text-2xl' />
                             </Link>
+                        </div>
+                    </div>
+                </div>
+                {/* Card format desktop */}
+                <div className='lg:absolute lg:inset-0 lg:flex lg:justify-center lg:items-center lg:z-10'>
+                    <div className='w-2/3 bg-background-violet drop-shadow-2xl flex flex-row justify-between'>
+                        <div className='flex-col flex items-center py-8 space-y-4 w-1/2'>
+                            <Image
+                                src={profilePicture}
+                                alt=''
+                                className='rounded-full bg-pink-100 w-52 h-52'
+                            />
+                            <p className='font-semibold text-2xl'>
+                                Maëlis HAMMOUCHE
+                            </p>
+                            <div className='h-0.5 w-32 rounded-xl bg-primary-violet'></div>
+                            <p className='text-xl'>
+                                Consultante Cloud & DevOps
+                            </p>
+                            <div className='w-full bg-white h-14 flex justify-center space-x-20 items-center'>
+                                <Link
+                                    href='https://www.linkedin.com/in/maelis-hammouche/'
+                                    rel='noopener noreferrer'
+                                    target='_blank'
+                                >
+                                    <i className='ri-linkedin-fill text-3xl' />
+                                </Link>
+                                <Link
+                                    href='https://github.com/maelis1234'
+                                    rel='noopener noreferrer'
+                                    target='_blank'
+                                >
+                                    <i className='ri-github-fill text-3xl' />
+                                </Link>
+                            </div>
+                        </div>
+                        <div className='flex flex-col w-1/2 space-y-8 pt-8 justify-center items-center'>
+                            <div className='space-x-8'>
+                                <button
+                                    onClick={() => {
+                                        router.push('/resume')
+                                    }}
+                                    className='text-white h-8 bg-primary-violet w-36 rounded-2xl hover:bg-violet-500'
+                                >
+                                    CV
+                                </button>
+                                <button
+                                    onClick={() => {
+                                        router.push('/projects')
+                                    }}
+                                    className='w-36 h-8 rounded-2xl border border-primary-violet text-primary-violet font-semibold bg-white hover:bg-violet-300'
+                                >
+                                    Projets
+                                </button>
+                            </div>
+                            <p className='px-12'>
+                                Lorem ipsum dolor sit amet. 33 dolorem unde aut
+                                quisquam rerum eum dolorum praesentium hic
+                                consequatur exercitationem ut voluptas harum ad
+                                consectetur tempora quo nisi maxime.{' '}
+                            </p>
                         </div>
                     </div>
                 </div>
