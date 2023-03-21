@@ -29,17 +29,29 @@ const Welcome: NextPage = () => {
                 ></div>
                 {/* Card format mobile */}
                 <div className='absolute inset-0 flex justify-center items-center z-10 lg:hidden'>
-                    <div className='w-72 h-3/4 bg-background-violet drop-shadow-2xl flex flex-col justify-center items-center space-y-8'>
-                        <div>
+                    <div className='w-72 h-3/4 bg-background-violet drop-shadow-2xl flex flex-col justify-center items-center space-y-4'>
+                        <div className='pt-2'>
                             <Image
                                 src={profilePicture}
                                 alt=''
-                                className='rounded-full bg-pink-100 w-44 h-44'
+                                className='rounded-full bg-pink-100 w-40 h-40'
                             />
                         </div>
                         <p className='font-semibold'>Maëlis HAMMOUCHE</p>
+                        {/* <p className='px-4 text-sm'>
+                            Passionnée par les nouvelles technologies et les
+                            Systèmes d&apos;Information, j&apos;ai réalisé un
+                            double cursus Programme Grande Ecole & Master
+                            Spécialisé Manager des SI et du Numérique à Grenoble
+                            Ecole de Management. Mes différentes expériences
+                            professionnelles m&apos;ont permis de me
+                            familiariser progressivement au monde des SI et
+                            d&apos;acquérir des compétences techniques dans le
+                            domaine du cloud.Aujourd’hui je suis consultante
+                            Cloud & DevOps, orientée en Software Development.
+                        </p> */}
                         <div className='h-0.5 w-32 rounded-xl bg-primary-violet'></div>
-                        <div className='flex flex-row space-x-8 pb-16'>
+                        <div className='flex flex-row space-x-8 pb-6'>
                             <button
                                 onClick={() => {
                                     router.push('/resume')

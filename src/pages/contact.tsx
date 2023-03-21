@@ -1,9 +1,7 @@
 import { NextPage } from 'next'
 
-interface Props {}
-
-const Contact: NextPage<Props> = ({}) => {
-    return <div></div>
+const Contact: NextPage = () => {
+    return <div className='bg-background-violet relative'>Contact</div>
 }
 
 export default Contact
