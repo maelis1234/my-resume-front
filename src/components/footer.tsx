@@ -33,7 +33,7 @@ const Footer = () => {
                 </Link>
             </div>
             <div className='flex pt-2'>
-                <i className='ri-copyright-fill ' />
+                <i className='ri-copyright-fill pr-1' />
                 <p>2023 par Maëlis Hammouche</p>
             </div>
         </footer>

@@ -60,14 +60,14 @@ const Welcome: NextPage = () => {
                             >
                                 CV
                             </button>
-                            <button
+                            {/* <button
                                 onClick={() => {
                                     router.push('/projects')
                                 }}
                                 className='w-24 h-8 rounded-2xl border border-primary-violet hover:bg-violet-300 text-primary-violet font-semibold bg-white'
                             >
                                 Projets
-                            </button>
+                            </button> */}
                         </div>
                         <div className='w-full bg-white h-14 flex justify-center space-x-6 items-center'>
                             <Link
@@ -130,14 +130,14 @@ const Welcome: NextPage = () => {
                                 >
                                     CV
                                 </button>
-                                <button
+                                {/* <button
                                     onClick={() => {
                                         router.push('/projects')
                                     }}
                                     className='w-36 h-8 rounded-2xl border border-primary-violet text-primary-violet font-semibold bg-white hover:bg-violet-300'
                                 >
                                     Projets
-                                </button>
+                                </button> */}
                             </div>
                             <p className='px-12'>
                                 Lorem ipsum dolor sit amet. 33 dolorem unde aut
