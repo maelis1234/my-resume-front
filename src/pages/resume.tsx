@@ -12,10 +12,10 @@ const Resume: NextPage = () => {
             <div className='bg-background-violet relative'>
                 <div className='flex flex-row justify-center items-center pt-8'>
                     <i className='ri-profile-line text-4xl'></i>
-                    <h1 className='ml-2 text-3xl font-bold'>CV</h1>
+                    <h1>CV</h1>
                 </div>
                 <div className='flex justify-center items-center'>
-                    <h2 className='font-bold text-xl py-3'>Expériences</h2>
+                    <h2 className='py-3'>Expériences</h2>
                 </div>
                 <Card
                     date='septembre 2021 - maintenant'
@@ -39,7 +39,7 @@ const Resume: NextPage = () => {
                     contentSecondMission='Newsletters internes et dashboards'
                 />
                 <div className='flex justify-center items-center'>
-                    <h2 className='font-bold text-xl py-3'>Formation</h2>
+                    <h2 className='py-3'>Formation</h2>
                 </div>
                 <Card
                     date={'2017-2021'}
@@ -49,12 +49,12 @@ const Resume: NextPage = () => {
                     location={'Grenoble Ecole de Management, France'}
                 />
                 <div className='flex justify-center items-center'>
-                    <h2 className='font-bold text-xl py-3'>Compétences</h2>
+                    <h2 className='py-3'>Compétences</h2>
                 </div>
                 <Card>
                     <div className='flex flex-col lg:flex-row space-y-3'>
                         <div>
-                            <p className='font-bold'>Développement</p>
+                            <h3 className='font-bold'>Développement</h3>
                             <ul className=' lg:px-8 lg:py-4 text-sm list-disc pl-4 space-y-1'>
                                 <li className=''>
                                     <span className='font-semibold'>
@@ -81,7 +81,7 @@ const Resume: NextPage = () => {
                                     Cypress
                                 </li>
                             </ul>
-                            <p className='font-bold mt-3'>Langues</p>
+                            <h3 className='font-bold mt-3'>Langues</h3>
                             <ul className='lg:px-8 lg:py-4 text-sm list-disc pl-4 space-y-1'>
                                 <li className='font-semibold'>
                                     Français (langue maternelle)
@@ -92,7 +92,7 @@ const Resume: NextPage = () => {
                             </ul>
                         </div>
                         <div>
-                            <p className='font-bold'>Certifications</p>
+                            <h3 className='font-bold'>Certifications</h3>
                             <ul className='lg:px-8 lg:py-4 text-sm list-disc pl-4 space-y-1'>
                                 <li className='font-semibold'>
                                     Google Cloud Digital Leader (janv-2022)

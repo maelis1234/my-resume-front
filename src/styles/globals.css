@@ -4,9 +4,22 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', cursive;
 }
 
 button {
     cursor: pointer;
+}
+
+h1 {
+    font: bold;
+    margin-left: 0.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+h2 {
+    font: bold;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
