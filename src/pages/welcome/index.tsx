@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import { NextPage } from 'next'
 import Image from 'next/image'
 import profilePicture from '../../assets/profilePicture.png'
@@ -10,13 +9,8 @@ const Welcome: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Maëlis Hammouche - CV</title>
-                <meta name='description' content="Page d'accueil" />
-                <meta
-                    name='viewport'
-                    content='width=device-width, initial-scale=1'
-                />
-                <link rel='icon' href='/favicon.ico' />
+                <title>Maëlis Hammouche - Website</title>
+                <meta name='description' content='Curriculum Vitae' />
             </Head>
             <main className='h-screen relative'>
                 <div
@@ -29,7 +23,7 @@ const Welcome: NextPage = () => {
                 ></div>
                 {/* Card format mobile */}
                 <div className='absolute inset-0 flex justify-center items-center z-10 lg:hidden'>
-                    <div className='w-72 h-3/4 bg-background-violet drop-shadow-2xl flex flex-col justify-center items-center space-y-4'>
+                    <div className='w-72 h-content bg-background-violet drop-shadow-2xl flex flex-col justify-center items-center space-y-4'>
                         <div className='pt-2'>
                             <Image
                                 src={profilePicture}
@@ -38,18 +32,19 @@ const Welcome: NextPage = () => {
                             />
                         </div>
                         <p className='font-semibold'>Maëlis HAMMOUCHE</p>
-                        {/* <p className='px-4 text-sm'>
-                            Passionnée par les nouvelles technologies et les
-                            Systèmes d&apos;Information, j&apos;ai réalisé un
-                            double cursus Programme Grande Ecole & Master
-                            Spécialisé Manager des SI et du Numérique à Grenoble
-                            Ecole de Management. Mes différentes expériences
-                            professionnelles m&apos;ont permis de me
-                            familiariser progressivement au monde des SI et
-                            d&apos;acquérir des compétences techniques dans le
-                            domaine du cloud.Aujourd’hui je suis consultante
-                            Cloud & DevOps, orientée en Software Development.
-                        </p> */}
+                        <p className='px-4 text-sm'>
+                            Bonjour et bienvenue sur mon site web !
+                        </p>
+                        <p className='px-4 text-sm'>
+                            Passionnée par les nouvelles technologies, je me
+                            suis orientée vers le cloud et le développement web
+                            après un cursus orienté management.
+                        </p>
+                        <p className='px-4 text-sm'>
+                            Je travaille aujourd&apos;hui en tant que
+                            développeuse fullstack chez Atos OneCloud.
+                        </p>
+
                         <div className='h-0.5 w-32 rounded-xl bg-primary-violet'></div>
                         <div className='flex flex-row space-x-8 pb-6'>
                             <button
@@ -58,7 +53,7 @@ const Welcome: NextPage = () => {
                                 }}
                                 className='text-white h-8 bg-primary-violet hover:bg-violet-400 w-24 rounded-2xl'
                             >
-                                CV
+                                Mon CV
                             </button>
                             {/* <button
                                 onClick={() => {
@@ -120,16 +115,8 @@ const Welcome: NextPage = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className='flex flex-col w-1/2 space-y-8 pt-8 justify-center items-center'>
-                            <div className='space-x-8'>
-                                <button
-                                    onClick={() => {
-                                        router.push('/resume')
-                                    }}
-                                    className='text-white h-8 bg-primary-violet w-36 rounded-2xl hover:bg-violet-500'
-                                >
-                                    CV
-                                </button>
+                        <div className='flex flex-col w-1/2 space-y-4 py-4 justify-center items-center'>
+                            {/* <div className='space-x-8'>
                                 {/* <button
                                     onClick={() => {
                                         router.push('/projects')
@@ -137,14 +124,35 @@ const Welcome: NextPage = () => {
                                     className='w-36 h-8 rounded-2xl border border-primary-violet text-primary-violet font-semibold bg-white hover:bg-violet-300'
                                 >
                                     Projets
-                                </button> */}
-                            </div>
+                                </button> 
+                            </div> */}
                             <p className='px-12'>
-                                Lorem ipsum dolor sit amet. 33 dolorem unde aut
-                                quisquam rerum eum dolorum praesentium hic
-                                consequatur exercitationem ut voluptas harum ad
-                                consectetur tempora quo nisi maxime.{' '}
+                                Bonjour et bienvenue sur mon site web !
                             </p>
+                            <p className='px-12'>
+                                Passionnée par les nouvelles technologies et les
+                                Systèmes d&apos;Information, j&apos;ai réalisé
+                                un double master à Grenoble Ecole de Management.
+                            </p>
+                            <p className='px-12'>
+                                Mes différentes expériences professionnelles
+                                m&apos;ont permis de me familiariser
+                                progressivement au monde des SI et
+                                d&apos;acquérir des compétences techniques dans
+                                le domaine du cloud.
+                            </p>
+                            <p className='px-12'>
+                                Je travaille aujourd&apos;hui en tant que
+                                développeuse fullstack chez Atos OneCloud.
+                            </p>
+                            <button
+                                onClick={() => {
+                                    router.push('/resume')
+                                }}
+                                className='text-white h-8 bg-primary-violet w-36 rounded-2xl hover:bg-violet-500'
+                            >
+                                Mon CV
+                            </button>
                         </div>
                     </div>
                 </div>

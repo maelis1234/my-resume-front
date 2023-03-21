@@ -33,7 +33,7 @@ const Sidebar = () => {
             )}
 
             <div
-                className={`top-0 right-0 w-2/5 bg-violet-400 pl-3 pt-24 text-white fixed h-full z-40 ease-in-out duration-300 ${
+                className={`top-0 right-0 w-2/5 lg:w-1/5 bg-violet-400 pl-3 pt-24 text-white fixed h-full z-40 ease-in-out duration-300 ${
                     showSidebar ? 'translate-x-0 ' : 'translate-x-full'
                 }`}
             >
@@ -53,7 +53,7 @@ const Sidebar = () => {
                             href='/resume'
                             onClick={handleLinkClick}
                         >
-                            CV
+                            Mon CV
                         </Link>
                     </li>
                     {/* <li>

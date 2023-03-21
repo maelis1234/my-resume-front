@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <footer className='text-sm p-3 border-t border-t-background-violet'>
+        <footer className='text-sm p-3 lg:p-8 border-t border-t-background-violet'>
             <div className='flex justify-between '>
                 <div>
                     <p className='font-bold'>Tel</p>
