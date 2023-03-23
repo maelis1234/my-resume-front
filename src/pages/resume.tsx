@@ -19,7 +19,7 @@ const Resume: NextPage = () => {
                 </div>
                 <Card
                     date='septembre 2021 - maintenant'
-                    jobTitle='Consultante Cloud & DevOps'
+                    jobTitle='Consultante Cloud & DevOps - Atos'
                     location='Bezons, France'
                     titleFirstMission='Projet HDH'
                     contentFirstMission='Développement d’une application utilisant ReactJS (NextJS), NestJS, PostgreSQL'
@@ -31,7 +31,7 @@ const Resume: NextPage = () => {
                 />
                 <Card
                     date='septembre 2020 - septembre 2021'
-                    jobTitle='Sales Excellence Analyst'
+                    jobTitle='Sales Excellence Analyst - Microsoft'
                     location='Issy Les Moulineaux, France'
                     titleFirstMission='Azure'
                     contentFirstMission='Analyse et suivi de toute l’activité commerciale Azure en France'
@@ -94,26 +94,16 @@ const Resume: NextPage = () => {
                         <div>
                             <h3 className='font-bold'>Certifications</h3>
                             <ul className='lg:px-8 lg:py-4 text-sm list-disc pl-4 space-y-1'>
-                                <li className='font-semibold'>
-                                    Google Cloud Digital Leader (janv-2022)
-                                </li>
-                                <li className='font-semibold'>
-                                    Microsoft Azure AZ-900 (fev-2022)
-                                </li>
-                                <li className='font-semibold'>
-                                    Microsoft Azure AI-900 (mai-2022)
-                                </li>
-                                <li className='font-semibold'>
-                                    AWS Cloud Practitioner (mars-2022)
-                                </li>
-                                <li className='font-semibold'>
+                                <li>Google Cloud Digital Leader (janv-2022)</li>
+                                <li>Microsoft Azure AZ-900 (fev-2022)</li>
+                                <li>Microsoft Azure AI-900 (mai-2022)</li>
+                                <li>AWS Cloud Practitioner (mars-2022)</li>
+                                <li>
                                     Professional Scrum Product Owner I
                                     (nov-2022)
                                 </li>
-                                <li className='font-semibold'>
-                                    Professional Scrum Master I (dec-2022)
-                                </li>
-                                <li className='font-semibold'>
+                                <li>Professional Scrum Master I (dec-2022)</li>
+                                <li>
                                     Hashicorp Terraform Associate 002 (dec-2022)
                                 </li>
                             </ul>
