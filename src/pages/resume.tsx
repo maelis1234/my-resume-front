@@ -15,7 +15,7 @@ const Resume: NextPage = () => {
                     <h1>CV</h1>
                 </div>
                 <div className='flex justify-center items-center'>
-                    <h2 className='py-3'>Expériences</h2>
+                    <h2 className=' text-xl py-3'>Expériences</h2>
                 </div>
                 <Card
                     date='septembre 2021 - maintenant'

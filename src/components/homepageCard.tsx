@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import router from 'next/router'
 import profilePicture from '@/assets/profilePicture.png'
+import PurpleButton from './purpleButton'
 
 const HomePageCard = () => {
     return (
@@ -32,14 +33,13 @@ const HomePageCard = () => {
 
                     <div className='h-0.5 w-32 rounded-xl bg-primary-violet'></div>
                     <div className='flex flex-row space-x-8 pb-6'>
-                        <button
-                            onClick={() => {
-                                router.push('/resume')
-                            }}
-                            className='text-white h-8 bg-primary-violet hover:bg-violet-400 w-24 rounded-2xl'
-                        >
-                            Mon CV
-                        </button>
+                        <PurpleButton
+                            route={'resume'}
+                            type={'button'}
+                            label={'Mon CV'}
+                            width={'w-24'}
+                            height={'h-8'}
+                        />
                     </div>
                     <div className='w-full bg-white h-14 flex justify-center space-x-6 items-center'>
                         <Link
@@ -109,14 +109,13 @@ const HomePageCard = () => {
                             Je travaille aujourd&apos;hui en tant que
                             développeuse fullstack chez Atos OneCloud.
                         </p>
-                        <button
-                            onClick={() => {
-                                router.push('/resume')
-                            }}
-                            className='text-white h-8 bg-primary-violet w-36 rounded-2xl hover:bg-violet-500'
-                        >
-                            Mon CV
-                        </button>
+                        <PurpleButton
+                            route={'resume'}
+                            type={'button'}
+                            label={'Mon CV'}
+                            width={'w-36'}
+                            height={'h-8'}
+                        />
                     </div>
                 </div>
             </div>

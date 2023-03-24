@@ -22,7 +22,7 @@ const Card = ({
     return (
         <>
             <div className='flex flex-col justify-center items-center z-10'>
-                <div className='w-80 lg:w-2/3 h-3/4 p-2 lg:p-4 mb-8 bg-white rounded-sm drop-shadow-lg flex flex-col space-y-4 justify-center items-start'>
+                <div className='w-80 lg:w-2/3 h-3/4 p-2 lg:p-4 mb-8 bg-white rounded-sm drop-shadow-lg flex flex-col space-y-4 justify-center items-center'>
                     {children}
                     <div className='space-y-4 lg:space-x-4 flex lg:px-8 lg:py-4 flex-col lg:flex-row w-full'>
                         <div className='space-y-1 lg:w-1/2'>

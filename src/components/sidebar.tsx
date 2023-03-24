@@ -56,6 +56,15 @@ const Sidebar = () => {
                             Mon CV
                         </Link>
                     </li>
+                    <li>
+                        <Link
+                            className='hover:text-primary-violet'
+                            href='/contact'
+                            onClick={handleLinkClick}
+                        >
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </>
