@@ -56,7 +56,7 @@ const Sidebar = () => {
                             Mon CV
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link
                             className='hover:text-primary-violet'
                             href='/projects'
@@ -64,8 +64,8 @@ const Sidebar = () => {
                         >
                             Mes projets
                         </Link>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                         <Link
                             className='hover:text-primary-violet'
                             href='/contact'
@@ -73,7 +73,7 @@ const Sidebar = () => {
                         >
                             Contact
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </>
