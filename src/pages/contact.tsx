@@ -7,6 +7,7 @@ import Card from '@/components/card'
 import InputComponent from '@/components/input'
 import PurpleButton from '@/components/purpleButton'
 import { useState } from 'react'
+import Head from 'next/head'
 
 const ContactSchema = Yup.object().shape({
     firstname: Yup.string()
@@ -45,109 +46,114 @@ const Contact: NextPage = () => {
     )
 
     return (
-        <div className='bg-background-violet relative'>
-            <div className='flex flex-row justify-center items-center pt-8'>
-                <i className='ri-discuss-line text-4xl'></i>
-                <h1 className='ml-2 text-4xl font-bold'>Contact</h1>
-            </div>
-            <div className='flex justify-center items-center'>
-                <h2 className='font-bold text-xl py-10'></h2>
-            </div>
-            <div className='flex flex-col justify-center items-center z-10'>
-                <div className='w-80 lg:w-1/3 h-3/4 p-2 lg:p-4 mb-8 bg-white rounded-sm drop-shadow-lg flex flex-col space-y-4 justify-center items-center'>
-                    <form
-                        onSubmit={formik.handleSubmit}
-                        className='flex flex-col justify-center items-center space-y-2'
-                    >
-                        <p className='text-primary-violet text-xl pt-3 font-bold'>
-                            Formulaire de contact
-                        </p>
-                        <div className='flex flex-col'>
-                            <InputComponent
-                                id={'firstname'}
-                                label={'Prénom'}
-                                placeholder={'Jean'}
-                                type={'text'}
-                                onChange={formik.handleChange}
-                                value={formik.values.firstname}
-                                minLength={1}
-                                maxLength={40}
-                            />
-                            {formik.touched.firstname &&
-                                formik.errors.firstname && (
-                                    <div className='text-red-500'>
-                                        {formik.errors.firstname}
-                                    </div>
-                                )}
-                        </div>
+        <>
+            <Head>
+                <title>Maëlis Hammouche - Contact</title>
+                <meta name='description' content='Page de de contact' />
+            </Head>
+            <div className='bg-background-violet relative'>
+                <div className='flex flex-row justify-center items-center pt-8 mb-4'>
+                    <i className='ri-discuss-line text-4xl'></i>
+                    <h1>Contact</h1>
+                </div>
+                <div className='flex justify-center items-center'></div>
+                <div className='flex flex-col justify-center items-center z-10'>
+                    <div className='w-72 lg:w-1/3 h-3/4 p-2 py-4 lg:p-4 mb-8 bg-white rounded-sm drop-shadow-lg flex flex-col space-y-4 justify-center items-center'>
+                        <form
+                            onSubmit={formik.handleSubmit}
+                            className='flex flex-col justify-center items-center space-y-2'
+                        >
+                            <p className='text-primary-violet text-xl font-bold'>
+                                Formulaire de contact
+                            </p>
+                            <div className='flex flex-col'>
+                                <InputComponent
+                                    id={'firstname'}
+                                    label={'Prénom'}
+                                    placeholder={'Jean'}
+                                    type={'text'}
+                                    onChange={formik.handleChange}
+                                    value={formik.values.firstname}
+                                    minLength={1}
+                                    maxLength={40}
+                                />
+                                {formik.touched.firstname &&
+                                    formik.errors.firstname && (
+                                        <div className='text-red-500'>
+                                            {formik.errors.firstname}
+                                        </div>
+                                    )}
+                            </div>
 
-                        <div className='flex flex-col'>
-                            <InputComponent
-                                id={'lastname'}
-                                label={'Nom'}
-                                placeholder={'Dupont'}
-                                type={'text'}
-                                onChange={formik.handleChange}
-                                value={formik.values.lastname}
-                                minLength={1}
-                                maxLength={40}
-                            />
-                            {formik.touched.lastname &&
-                                formik.errors.lastname && (
-                                    <div className='text-red-500'>
-                                        {formik.errors.lastname}
-                                    </div>
-                                )}
-                        </div>
+                            <div className='flex flex-col'>
+                                <InputComponent
+                                    id={'lastname'}
+                                    label={'Nom'}
+                                    placeholder={'Dupont'}
+                                    type={'text'}
+                                    onChange={formik.handleChange}
+                                    value={formik.values.lastname}
+                                    minLength={1}
+                                    maxLength={40}
+                                />
+                                {formik.touched.lastname &&
+                                    formik.errors.lastname && (
+                                        <div className='text-red-500'>
+                                            {formik.errors.lastname}
+                                        </div>
+                                    )}
+                            </div>
 
-                        <div className='flex flex-col'>
-                            <InputComponent
-                                id={'email'}
-                                label={'Adresse email'}
-                                placeholder={'jean.dupont@mail.com'}
-                                type={'email'}
-                                onChange={formik.handleChange}
-                                value={formik.values.email}
-                            />
-                            {formik.touched.email && formik.errors.email && (
-                                <div className='text-red-500'>
-                                    {formik.errors.email}
-                                </div>
-                            )}{' '}
-                        </div>
-                        <div className='flex flex-col'>
-                            <label htmlFor='message'>Message</label>
-                            <textarea
-                                className='border-2 rounded-md h-16 border-primary-violet placeholder:pl-1 placeholder:text-sm'
-                                id='message'
-                                name='message'
-                                placeholder='Veuillez entrer votre message'
-                                onChange={formik.handleChange}
-                                value={formik.values.message}
-                                minLength={1}
-                                maxLength={500}
-                            />
-                            {formik.touched.message &&
-                                formik.errors.message && (
-                                    <div className='text-red-500'>
-                                        {formik.errors.message}
-                                    </div>
-                                )}
-                        </div>
-                        <div>
-                            <PurpleButton
-                                route={'message-sent'}
-                                label={'Envoyer'}
-                                type={'submit'}
-                                width={'w-36'}
-                                height={'h-8'}
-                                disabled={!isFormFilled}
-                            />
-                        </div>
-                    </form>
+                            <div className='flex flex-col'>
+                                <InputComponent
+                                    id={'email'}
+                                    label={'Adresse email'}
+                                    placeholder={'jean.dupont@mail.com'}
+                                    type={'email'}
+                                    onChange={formik.handleChange}
+                                    value={formik.values.email}
+                                />
+                                {formik.touched.email &&
+                                    formik.errors.email && (
+                                        <div className='text-red-500'>
+                                            {formik.errors.email}
+                                        </div>
+                                    )}{' '}
+                            </div>
+                            <div className='flex flex-col'>
+                                <label htmlFor='message'>Message</label>
+                                <textarea
+                                    className='border-2 rounded-md h-16 border-primary-violet placeholder:pl-1 placeholder:text-sm'
+                                    id='message'
+                                    name='message'
+                                    placeholder='Veuillez entrer votre message'
+                                    onChange={formik.handleChange}
+                                    value={formik.values.message}
+                                    minLength={1}
+                                    maxLength={500}
+                                />
+                                {formik.touched.message &&
+                                    formik.errors.message && (
+                                        <div className='text-red-500'>
+                                            {formik.errors.message}
+                                        </div>
+                                    )}
+                            </div>
+                            <div>
+                                <PurpleButton
+                                    route={'message-sent'}
+                                    label={'Envoyer'}
+                                    type={'submit'}
+                                    width={'w-36'}
+                                    height={'h-8'}
+                                    disabled={!isFormFilled}
+                                />
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

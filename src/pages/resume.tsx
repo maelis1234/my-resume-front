@@ -7,7 +7,10 @@ const Resume: NextPage = () => {
         <>
             <Head>
                 <title>Maëlis Hammouche - Mon CV</title>
-                <meta name='description' content="Page d'accueil" />
+                <meta
+                    name='description'
+                    content='Description de mes expériences professionnelles et mes formations'
+                />
             </Head>
             <div className='bg-background-violet relative'>
                 <div className='flex flex-row justify-center items-center pt-8'>
