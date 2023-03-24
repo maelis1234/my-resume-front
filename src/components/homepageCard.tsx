@@ -3,6 +3,7 @@ import Image from 'next/image'
 import router from 'next/router'
 import profilePicture from '@/assets/profilePicture.png'
 import PurpleButton from './purpleButton'
+import { motion } from 'framer-motion'
 
 const HomePageCard = () => {
     return (
@@ -109,13 +110,21 @@ const HomePageCard = () => {
                             Je travaille aujourd&apos;hui en tant que
                             développeuse fullstack chez Atos OneCloud.
                         </p>
-                        <PurpleButton
+                        {/* <PurpleButton
                             route={'resume'}
                             type={'button'}
                             label={'Mon CV'}
                             width={'w-36'}
                             height={'h-8'}
-                        />
+                        /> */}
+                        <motion.button
+                            whileHover={{ scale: 1.8 }}
+                            whileTap={{ scale: 0.9 }}
+                            onClick={() => router.push('/resume')}
+                            className='bg-primary-violet text-white font-bold py-2 px-4 rounded-xl'
+                        >
+                            Mon CV
+                        </motion.button>
                     </div>
                 </div>
             </div>
