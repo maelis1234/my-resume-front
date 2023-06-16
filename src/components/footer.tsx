@@ -9,7 +9,7 @@ const Footer = () => {
                     <p>06 XX XX XX XX</p>
                 </div>
                 <Link
-                    href='mailto:maelis.hammouche@gmail.com'
+                    href=''
                     className='hover:text-primary-violet'
                 >
                     <p className='font-bold'>Mail</p>
