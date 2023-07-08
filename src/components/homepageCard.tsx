@@ -110,13 +110,6 @@ const HomePageCard = () => {
                             Je travaille aujourd&apos;hui en tant que
                             développeuse fullstack chez Eviden OneCloud.
                         </p>
-                        {/* <PurpleButton
-                            route={'resume'}
-                            type={'button'}
-                            label={'Mon CV'}
-                            width={'w-36'}
-                            height={'h-8'}
-                        /> */}
                         <motion.button
                             whileHover={{ scale: 1.8 }}
                             whileTap={{ scale: 0.9 }}

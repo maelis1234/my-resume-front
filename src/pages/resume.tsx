@@ -83,7 +83,7 @@ const Resume: NextPage = () => {
                                     </span>
                                     Cypress, Jest
                                 </li>
-                                 <li>
+                                <li>
                                     <span className='font-semibold'>
                                         Outils DevOps :{' '}
                                     </span>

@@ -1,4 +1,4 @@
-Here is my personal website with my resume and my projects.
+Here is my personal website with my resume and my projects 📖
 
 Is is accessible on https://my-resume-navy-two.vercel.app/welcome
 
