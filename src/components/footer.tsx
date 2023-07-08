@@ -3,19 +3,6 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <footer className='text-sm p-3 lg:p-8 border-t border-t-background-violet'>
-            <div className='flex justify-between '>
-                <div>
-                    <p className='font-bold'>Tel</p>
-                    <p>06 XX XX XX XX</p>
-                </div>
-                <Link
-                    href=''
-                    className='hover:text-primary-violet'
-                >
-                    <p className='font-bold'>Mail</p>
-                    <p>maelis.hammouche@gmail.com</p>
-                </Link>
-            </div>
             <div className='space-x-4'>
                 <Link
                     href='https://www.linkedin.com/in/maelis-hammouche/'
