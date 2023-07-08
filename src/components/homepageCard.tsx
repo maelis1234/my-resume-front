@@ -29,7 +29,7 @@ const HomePageCard = () => {
                     </p>
                     <p className='px-4 text-sm'>
                         Je travaille aujourd&apos;hui en tant que développeuse
-                        fullstack chez Atos OneCloud.
+                        fullstack chez Eviden OneCloud.
                     </p>
 
                     <div className='h-0.5 w-32 rounded-xl bg-primary-violet'></div>
@@ -108,7 +108,7 @@ const HomePageCard = () => {
                         </p>
                         <p className='px-12'>
                             Je travaille aujourd&apos;hui en tant que
-                            développeuse fullstack chez Atos OneCloud.
+                            développeuse fullstack chez Eviden OneCloud.
                         </p>
                         {/* <PurpleButton
                             route={'resume'}
