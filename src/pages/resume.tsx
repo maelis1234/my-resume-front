@@ -63,25 +63,31 @@ const Resume: NextPage = () => {
                                     <span className='font-semibold'>
                                         Frontend :{' '}
                                     </span>
-                                    ReactJS, NextJS, Tailwind CSS, Angular
+                                    ReactJS, NextJS, Angular, Tailwind CSS
                                 </li>
                                 <li>
                                     <span className='font-semibold'>
                                         Backend :{' '}
                                     </span>
-                                    NestJS
+                                    NestJS, Firebase
                                 </li>
                                 <li>
                                     <span className='font-semibold'>
                                         Base de données :{' '}
                                     </span>
-                                    PostgreSQL, Prisma
+                                    PostgreSQL, Prisma, Firestore
                                 </li>
                                 <li>
                                     <span className='font-semibold'>
                                         Testing :{' '}
                                     </span>
-                                    Cypress
+                                    Cypress, Jest
+                                </li>
+                                 <li>
+                                    <span className='font-semibold'>
+                                        Outils DevOps :{' '}
+                                    </span>
+                                    GitLab, Docker, Postman, Figma
                                 </li>
                             </ul>
                             <h3 className='font-bold mt-3'>Langues</h3>
