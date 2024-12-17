@@ -108,7 +108,7 @@ const HomePageCard = () => {
                         </p>
                         <p className='px-12'>
                             Je travaille aujourd&apos;hui en tant que
-                            développeuse fullstack chez Eviden OneCloud.
+                            développeuse fullstack chez Visian.
                         </p>
                         <motion.button
                             whileHover={{ scale: 1.8 }}
