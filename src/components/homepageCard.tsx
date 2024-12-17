@@ -29,7 +29,7 @@ const HomePageCard = () => {
                     </p>
                     <p className='px-4 text-sm'>
                         Je travaille aujourd&apos;hui en tant que développeuse
-                        fullstack chez Eviden OneCloud.
+                        fullstack chez Visian.
                     </p>
 
                     <div className='h-0.5 w-32 rounded-xl bg-primary-violet'></div>
@@ -73,7 +73,7 @@ const HomePageCard = () => {
                             Maëlis HAMMOUCHE
                         </p>
                         <div className='h-0.5 w-32 rounded-xl bg-primary-violet'></div>
-                        <p className='text-xl'>Consultante Cloud & DevOps</p>
+                        <p className='text-xl'>Développeuse full stack</p>
                         <div className='w-full bg-white h-14 flex justify-center space-x-20 items-center'>
                             <Link
                                 href='https://www.linkedin.com/in/maelis-hammouche/'
@@ -104,7 +104,7 @@ const HomePageCard = () => {
                             Mes différentes expériences professionnelles
                             m&apos;ont permis de me familiariser progressivement
                             au monde des SI et d&apos;acquérir des compétences
-                            techniques dans le domaine du cloud.
+                            techniques dans le domaine du cloud et du développement d'applications.
                         </p>
                         <p className='px-12'>
                             Je travaille aujourd&apos;hui en tant que
