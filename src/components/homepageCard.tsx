@@ -104,7 +104,7 @@ const HomePageCard = () => {
                             Mes différentes expériences professionnelles
                             m&apos;ont permis de me familiariser progressivement
                             au monde des SI et d&apos;acquérir des compétences
-                            techniques dans le domaine du cloud et du développement d'applications.
+                            techniques dans le domaine du cloud et du développement d&apos;applications.
                         </p>
                         <p className='px-12'>
                             Je travaille aujourd&apos;hui en tant que
