@@ -20,8 +20,15 @@ const Resume: NextPage = () => {
                 <div className='flex justify-center items-center'>
                     <h2 className=' text-xl py-3'>Expériences</h2>
                 </div>
+                 <Card
+                    date='juillet 2024 - maintenant'
+                    jobTitle='Développeuse full stack - Visian'
+                    location='Paris, France'
+                    titleFirstMission='Crédit Agricole Technologies Services'
+                    contentFirstMission='Développement d&apos;applications utilisant Angular et Node.js dans un environnement DevOps en méthode agile Scrum'
+                />
                 <Card
-                    date='septembre 2021 - maintenant'
+                    date='septembre 2021 - juillet 2024'
                     jobTitle='Consultante Cloud & DevOps - Atos'
                     location='Bezons, France'
                     titleFirstMission='Projet HDH'
